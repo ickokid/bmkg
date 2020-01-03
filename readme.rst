@@ -21,7 +21,7 @@ province.php?province_id=31&area_id=501530
 ********
 Weather
 ********
-Get Data Weather with API BMKG & Grab HTML Page BKMG 
+Get Data Weather with API BMKG (weather.php) & Grab HTML Page BKMG (weather_html.php)
 
 weather.php
 
@@ -34,6 +34,15 @@ weather_html.php
 weather_html.php?province_id=31
 
 weather_html.php?province_id=31&area_id=501530
+
+
+******************
+Weather IP ADDRESS
+******************
+Get Data Weather Capital City from Province result IP Address GeoLite2  
+
+weather_ipaddress.php
+
 
 
 **********
