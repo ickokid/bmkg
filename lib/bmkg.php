@@ -467,67 +467,127 @@ class BMKG{
 		return $str;
 	}
 	
+	private function value_greeting_xml($value){
+		$str = "";
+		switch ($value) {
+			case 0:
+				$str = "Pagi";
+				break;
+			case 6:
+				$str = "Siang";
+				break;
+			case 12:
+				$str = "Malam";
+				break;
+			case 18:
+				$str = "Dini Hari";
+				break;
+			case 24:
+				$str = "Pagi";
+				break;
+			case 30:
+				$str = "Siang";
+				break;
+			case 36:
+				$str = "Malam";
+				break;
+			case 42:
+				$str = "Dini Hari";
+				break;
+			case 48:
+				$str = "Pagi";
+				break;
+			case 54:
+				$str = "Siang";
+				break;
+			case 60:
+				$str = "Malam";
+				break;
+			case 66:
+				$str = "Dini Hari";
+				break;
+		}
+		
+		return $str;
+	}
+	
 	private function value_greeting($value){
 		$str = "";
 		switch ($value) {
 			case 0:
-				$str = "Dini Hari";
+				$str = "Pagi";
 				break;
 			case 1:
-				$str = "Dini Hari";
+				$str = "Pagi";
+				break;
+			case 2:
+				$str = "Pagi";
+				break;
+			case 3:
+				$str = "Pagi";
 				break;
 			case 4:
-				$str = "Dini Hari";
+				$str = "Pagi";
+				break;
+			case 5:
+				$str = "Pagi";
 				break;
 			case 6:
-				$str = "Pagi";
+				$str = "Siang";
 				break;
 			case 7:
-				$str = "Pagi";
+				$str = "Siang";
+				break;
+			case 8:
+				$str = "Siang";
+				break;
+			case 9:
+				$str = "Siang";
 				break;
 			case 10:
-				$str = "Pagi";
+				$str = "Siang";
+				break;
+			case 11:
+				$str = "Siang";
 				break;
 			case 12:
-				$str = "Siang";
+				$str = "Malam";
 				break;
 			case 13:
-				$str = "Siang";
+				$str = "Malam";
+				break;
+			case 14:
+				$str = "Malam";
+				break;
+			case 15:
+				$str = "Malam";
 				break;
 			case 16:
-				$str = "Sore";
+				$str = "Malam";
+				break;
+			case 17:
+				$str = "Malam";
 				break;
 			case 18:
-				$str = "Malam";
+				$str = "Dini Hari";
 				break;
 			case 19:
-				$str = "Malam";
+				$str = "Dini Hari";
+				break;
+			case 20:
+				$str = "Dini Hari";
+				break;
+			case 21:
+				$str = "Dini Hari";
 				break;
 			case 22:
-				$str = "Malam";
+				$str = "Dini Hari";
+				break;
+			case 23:
+				$str = "Dini Hari";
 				break;
 			case 24:
 				$str = "Dini Hari";
-				break;
-			case 30:
-				$str = "Pagi";
-				break;
-			case 36:
-				$str = "Siang";
-				break;
-			case 42:
-				$str = "Malam";
-			case 48:
-				$str = "Dini Hari";
-				break;
-			case 54:
-				$str = "Pagi";
-				break;
-			case 60:
-				$str = "Siang";
-				break;
-			case 66:
-				$str = "Malam";
 				break;
 		}
 		
@@ -1251,7 +1311,6 @@ class BMKG{
 	public function weather($province_id = "", $area_id = ""){
 		$arrProvince 	= $this->province_list($province_id);
 		$dateNow	 	= intval(date('Ymd'));
-		$isError 		= false;
 		
 		$xmlPath = isset($arrProvince['xml'])?$arrProvince['xml']:"";
 		if(empty($xmlPath)){
@@ -1289,13 +1348,13 @@ class BMKG{
 					echo "</pre>"; */
 					
 					if($area_id == $id || empty($area_id)){
-						$arrData[$key]['area_id'] 	= isset($area['@attributes']['id'])?$area['@attributes']['id']:"";
-						$arrData[$key]['province'] 	= isset($arrProvince['province'])?$arrProvince['province']:"";
-						$arrData[$key]['city'] 		= isset($area['name'][1])?trim(str_replace(array("Kab.","Kota"),"",$area['name'][1])):"";
-						
 						$arrParameter 	= isset($area['parameter'])?$area['parameter']:array();
-
+						
 						if(count($arrParameter) > 0){
+							$arrData[$key]['area_id'] 	= isset($area['@attributes']['id'])?$area['@attributes']['id']:"";
+							$arrData[$key]['province'] 	= isset($arrProvince['province'])?$arrProvince['province']:"";
+							$arrData[$key]['city'] 		= isset($area['name'][1])?trim(str_replace(array("Kab.","Kota"),"",$area['name'][1])):"";
+							
 							foreach($arrParameter as $idx => $parameter){
 								/* echo "<pre>";
 								print_r($parameter);
@@ -1308,11 +1367,6 @@ class BMKG{
 									foreach($timeranges as $k => $timerange){
 										$datetime = $timerange['@attributes']['datetime'];
 										$date = substr($datetime,0,-4);
-										
-										if(strtotime($date) < strtotime($dateNow)){
-											$isError = true;
-											break;
-										}
 										
 										$datetmp = "";
 										if($k > 0){
@@ -1328,7 +1382,7 @@ class BMKG{
 
 										$arrData[$key]['weather'][$date][$index]['value'] = $value;
 										$arrData[$key]['weather'][$date][$index]['desc'] = $this->value_weather($value);
-										$arrData[$key]['weather'][$date][$index]['greetings'] = $this->value_greeting($h);
+										$arrData[$key]['weather'][$date][$index]['greetings'] = $this->value_greeting_xml($h);
 										$arrData[$key]['weather'][$date][$index]['highlight'] = $this->value_setnow($date,$h);
 										$arrData[$key]['weather'][$date][$index]['hour'] = $this->value_hconvert($h);
 										$index++;
@@ -1357,7 +1411,7 @@ class BMKG{
 										
 										$arrData[$key]['temperature'][$date][$index]['celcius'] = $celcius;
 										$arrData[$key]['temperature'][$date][$index]['fahrenheit'] = $fahrenheit;
-										$arrData[$key]['temperature'][$date][$index]['greetings'] = $this->value_greeting($h);
+										$arrData[$key]['temperature'][$date][$index]['greetings'] = $this->value_greeting_xml($h);
 										$arrData[$key]['temperature'][$date][$index]['highlight'] = $this->value_setnow($date,$h);
 										$arrData[$key]['temperature'][$date][$index]['hour'] = $this->value_hconvert($h);
 										$index++;
@@ -1384,7 +1438,7 @@ class BMKG{
 										$value = isset($timerange['value'])?intval($timerange['value']):0;
 										
 										$arrData[$key]['humidity'][$date][$index]['value'] = $value;
-										$arrData[$key]['humidity'][$date][$index]['greetings'] = $this->value_greeting($h);
+										$arrData[$key]['humidity'][$date][$index]['greetings'] = $this->value_greeting_xml($h);
 										$arrData[$key]['humidity'][$date][$index]['highlight'] = $this->value_setnow($date,$h);
 										$arrData[$key]['humidity'][$date][$index]['hour'] = $this->value_hconvert($h);
 										$index++;
@@ -1411,7 +1465,7 @@ class BMKG{
 										$kph = isset($timerange['value'][2])?$timerange['value'][2]:0;
 										
 										$arrData[$key]['wind_speed'][$date][$index]['kph'] = $kph;
-										$arrData[$key]['wind_speed'][$date][$index]['greetings'] = $this->value_greeting($h);
+										$arrData[$key]['wind_speed'][$date][$index]['greetings'] = $this->value_greeting_xml($h);
 										$arrData[$key]['wind_speed'][$date][$index]['highlight'] = $this->value_setnow($date,$h);
 										$arrData[$key]['wind_speed'][$date][$index]['hour'] = $this->value_hconvert($h);
 										$index++;
@@ -1439,13 +1493,15 @@ class BMKG{
 										
 										$arrData[$key]['wind_direction'][$date][$index]['value'] = $value;
 										$arrData[$key]['wind_direction'][$date][$index]['desc'] = $this->value_wind_direction($value);
-										$arrData[$key]['wind_direction'][$date][$index]['greetings'] = $this->value_greeting($h);
+										$arrData[$key]['wind_direction'][$date][$index]['greetings'] = $this->value_greeting_xml($h);
 										$arrData[$key]['wind_direction'][$date][$index]['highlight'] = $this->value_setnow($date,$h);
 										$arrData[$key]['wind_direction'][$date][$index]['hour'] = $this->value_hconvert($h);
 										$index++;
 									}
 								}
 							}
+							
+							$result['data'] = array_values($arrData);
 						}
 					}
 	
@@ -1454,22 +1510,6 @@ class BMKG{
 					echo "</pre>"; */
 				}
 			}
-			
-			/* if($isError){
-				$respond = $this->weather_html($province_id, $area_id);
-				$respon_status = isset($respond['status'])?$respond['status']:"";
-				
-				if($respon_status == "success"){
-					$result['data'] = isset($respond['data'])?$respond['data']:array();
-				} else {
-					$result['status']     = "error";
-					$result['message']    = "offline";
-					$result['timestamp']  = time();
-				}
-			} else {
-				$result['data'] = array_values($arrData);
-			} */ 
-			$result['data'] = array_values($arrData);
 		}
 
 		return $result;
@@ -1599,7 +1639,7 @@ class BMKG{
 								
 								$arrDate = array();
 								for($i=0; $i<$index; $i++){
-									array_push($arrDate,  date('Y-m-d', strtotime('+'.$i.' day')));
+									array_push($arrDate,  date('Ymd', strtotime('+'.$i.' day')));
 								}
 								
 								foreach($arrHtml as $a => $arrDiv){
@@ -1614,7 +1654,7 @@ class BMKG{
 											$time = "";
 											if(!empty($strTime)){
 												$strTime = html_entity_decode(strip_tags($strTime));
-												$time = intval(trim(str_replace("WIB","",$strTime)));
+												$time = intval(trim(str_replace(array("WIB","WITA","WIT",":00"),"",$strTime)));
 											}
 											
 											$weather = "";
@@ -1640,7 +1680,7 @@ class BMKG{
 												$strWind = strip_tags($strWind);
 												$arrWind = explode("km/jam",$strWind);
 												
-												$wind_speed = trim($arrWind[0]);
+												$wind_speed = trim(str_replace("&nbsp;","",$arrWind[0]));
 												$wind_direction = trim($arrWind[1]);
 											}
 											
