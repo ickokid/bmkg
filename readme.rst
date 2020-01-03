@@ -37,7 +37,7 @@ weather_html.php?province_id=31&area_id=501530
 
 
 ******************
-Weather IP ADDRESS
+Weather IP Address
 ******************
 Get Data Weather Capital City from Province result IP Address GeoLite2  
 
