@@ -634,6 +634,7 @@ class BMKG{
 		$list = array(
 				"01"=>array("province"=>"Aceh","xml"=>"/DigitalForecast-Aceh.xml",
 							"data_city"=>array(
+										array("area_id"=>"501397","city"=>"Banda Aceh"),
 										array("area_id"=>"501409","city"=>"Aceh Barat"),
 										array("area_id"=>"501400","city"=>"Aceh Barat Daya"),
 										array("area_id"=>"501404","city"=>"Aceh Besar"),
@@ -646,7 +647,6 @@ class BMKG{
 										array("area_id"=>"501402","city"=>"Aceh Timur"),
 										array("area_id"=>"501408","city"=>"Aceh Utara"),
 										array("area_id"=>"501408","city"=>"Aceh Utara"),
-										array("area_id"=>"501397","city"=>"Banda Aceh"),
 										array("area_id"=>"501412","city"=>"Bener Meriah"),
 										array("area_id"=>"501398","city"=>"Bireun"),
 										array("area_id"=>"501399","city"=>"Gayo Lues"),
@@ -662,9 +662,9 @@ class BMKG{
 						   ),
 				"02"=>array("province"=>"Bali","xml"=>"/DigitalForecast-Bali.xml",
 							"data_city"=>array(
+										array("area_id"=>"501164","city"=>"Denpasar"),
 										array("area_id"=>"501162","city"=>"Amplapura"),
 										array("area_id"=>"501163","city"=>"Bangli"),
-										array("area_id"=>"501164","city"=>"Denpasar"),
 										array("area_id"=>"501165","city"=>"Gianyar"),
 										array("area_id"=>"501166","city"=>"Mengwi"),
 										array("area_id"=>"501167","city"=>"Negara"),
@@ -675,12 +675,12 @@ class BMKG{
 						   ),							
 				"03"=>array("province"=>"Bangka Belitung","xml"=>"/DigitalForecast-BangkaBelitung.xml",
 							"data_city"=>array(
+										array("area_id"=>"501167","city"=>"Pangkal Pinang"),
 										array("area_id"=>"5002247","city"=>"Jebus"),
 										array("area_id"=>"501362","city"=>"Koba"),
 										array("area_id"=>"501363","city"=>"Manggar"),
 										array("area_id"=>"501364","city"=>"Mentok"),
 										array("area_id"=>"501365","city"=>"Mengwi"),
-										array("area_id"=>"501167","city"=>"Pangkal Pinang"),
 										array("area_id"=>"5002249","city"=>"Selat Nasik"),
 										array("area_id"=>"501366","city"=>"Sungai Liat"),
 										array("area_id"=>"5002248","city"=>"Sungai Selan"),
@@ -690,6 +690,7 @@ class BMKG{
 						   ),								
 				"04"=>array("province"=>"Banten","xml"=>"/DigitalForecast-Banten.xml",
 							"data_city"=>array(
+										array("area_id"=>"501174","city"=>"Serang"),
 										array("area_id"=>"5008861","city"=>"Anyer"),
 										array("area_id"=>"5008798","city"=>"Bayah"),
 										array("area_id"=>"5002244","city"=>"Binuangen"),
@@ -706,7 +707,6 @@ class BMKG{
 										array("area_id"=>"501172","city"=>"Pandeglang"),
 										array("area_id"=>"501172","city"=>"Pandeglang"),
 										array("area_id"=>"501173","city"=>"Rangkasbitung"),
-										array("area_id"=>"501174","city"=>"Serang"),
 										array("area_id"=>"5002333","city"=>"Tangerang"),
 										array("area_id"=>"501176","city"=>"Tigaraksa"),
 										array("area_id"=>"501176","city"=>"Tigaraksa"),
@@ -729,20 +729,20 @@ class BMKG{
 						   ),								
 				"06"=>array("province"=>"DI Yogyakarta","xml"=>"/DigitalForecast-DIYogyakarta.xml",
 							"data_city"=>array(
+										array("area_id"=>"501190","city"=>"Yogyakarta"),
 										array("area_id"=>"501186","city"=>"Bantul"),
 										array("area_id"=>"501187","city"=>"Sleman"),
 										array("area_id"=>"501188","city"=>"Wates"),
 										array("area_id"=>"501189","city"=>"Gunung Kidul"),
-										array("area_id"=>"501190","city"=>"Yogyakarta"),
 									)
 						   ),								
 				"07"=>array("province"=>"DKI Jakarta","xml"=>"/DigitalForecast-DKIJakarta.xml",
 							"data_city"=>array(
+										array("area_id"=>"501195","city"=>"Jakarta Pusat"),
 										array("area_id"=>"501191","city"=>"Jakarta Timur"),
 										array("area_id"=>"501192","city"=>"Jakarta Barat"),
 										array("area_id"=>"501193","city"=>"Jakarta Selatan"),
 										array("area_id"=>"501194","city"=>"Kepulauan Seribu"),
-										array("area_id"=>"501195","city"=>"Jakarta Pusat"),
 										array("area_id"=>"501196","city"=>"Jakarta Utara"),
 									)
 						   ),								
@@ -758,10 +758,10 @@ class BMKG{
 						   ),								
 				"09"=>array("province"=>"Jambi","xml"=>"/DigitalForecast-Jambi.xml",
 							"data_city"=>array(
+									    array("area_id"=>"501205","city"=>"Jambi"),
 										array("area_id"=>"501202","city"=>"Bangko"),
 										array("area_id"=>"501203","city"=>"Bulian"),
 										array("area_id"=>"501204","city"=>"Bungo"),
-										array("area_id"=>"501205","city"=>"Jambi"),
 										array("area_id"=>"5002260","city"=>"Siluak"),
 										array("area_id"=>"501207","city"=>"Kuala Tungkal"),
 										array("area_id"=>"501208","city"=>"Sabak"),
@@ -808,6 +808,7 @@ class BMKG{
 						   ),								
 				"11"=>array("province"=>"Jawa Tengah","xml"=>"/DigitalForecast-JawaTengah.xml",
 							"data_city"=>array(
+										array("area_id"=>"501262","city"=>"Semarang"),
 										array("area_id"=>"501237","city"=>"Banjarnegara"),
 										array("area_id"=>"501238","city"=>"Batang"),
 										array("area_id"=>"501239","city"=>"Blora"),
@@ -833,7 +834,6 @@ class BMKG{
 										array("area_id"=>"501259","city"=>"Purworejo"),
 										array("area_id"=>"501260","city"=>"Rembang"),
 										array("area_id"=>"501261","city"=>"Salatiga"),
-										array("area_id"=>"501262","city"=>"Semarang"),
 										array("area_id"=>"501263","city"=>"Slawi"),
 										array("area_id"=>"501264","city"=>"Sragen"),
 										array("area_id"=>"501265","city"=>"Sukoharjo"),
@@ -847,6 +847,7 @@ class BMKG{
 						   ),								
 				"12"=>array("province"=>"Jawa Timur","xml"=>"/DigitalForecast-JawaTimur.xml",
 							"data_city"=>array(
+										array("area_id"=>"501306","city"=>"Surabaya"),
 										array("area_id"=>"501272","city"=>"Bangkalan"),
 										array("area_id"=>"501273","city"=>"Banyuwangi"),
 										array("area_id"=>"501274","city"=>"Batu"),
@@ -881,7 +882,6 @@ class BMKG{
 										array("area_id"=>"501303","city"=>"Sidoarjo"),
 										array("area_id"=>"501304","city"=>"Situbondo"),
 										array("area_id"=>"501305","city"=>"Sumenep"),
-										array("area_id"=>"501306","city"=>"Surabaya"),
 										array("area_id"=>"501307","city"=>"Trenggalek"),
 										array("area_id"=>"501308","city"=>"Tuban"),
 										array("area_id"=>"501309","city"=>"Tulungagung"),
@@ -889,6 +889,7 @@ class BMKG{
 						   ),								
 				"13"=>array("province"=>"Kalimantan Barat","xml"=>"/DigitalForecast-KalimantanBarat.xml",
 							"data_city"=>array(
+										array("area_id"=>"501315","city"=>"Pontianak"),
 										array("area_id"=>"501310","city"=>"Bengkayang"),
 										array("area_id"=>"5002241","city"=>"Kapuas Hulu"),
 										array("area_id"=>"5002243","city"=>"Kayong Utara"),
@@ -898,7 +899,6 @@ class BMKG{
 										array("area_id"=>"501313","city"=>"Mempawah"),
 										array("area_id"=>"5002242","city"=>"Melawi"),
 										array("area_id"=>"501313","city"=>"Mempawah"),
-										array("area_id"=>"501315","city"=>"Pontianak"),
 										array("area_id"=>"501317","city"=>"Sambas"),
 										array("area_id"=>"501318","city"=>"Sanggau"),
 										array("area_id"=>"501319","city"=>"Sekadau"),
@@ -909,9 +909,9 @@ class BMKG{
 						   ),								
 				"14"=>array("province"=>"Kalimantan Selatan","xml"=>"/DigitalForecast-KalimantanSelatan.xml",
 							"data_city"=>array(
+										array("area_id"=>"501325","city"=>"Banjarmasin"),
 										array("area_id"=>"501323","city"=>"Hulu Sungai Utara"),
 										array("area_id"=>"501324","city"=>"Banjarbaru"),
-										array("area_id"=>"501325","city"=>"Banjarmasin"),
 										array("area_id"=>"501327","city"=>"Hulu Sungai Tengah"),
 										array("area_id"=>"501326","city"=>"Tanah Bambu"),
 										array("area_id"=>"501328","city"=>"Hulu Sungai Selatan"),
@@ -926,6 +926,7 @@ class BMKG{
 						   ),								
 				"15"=>array("province"=>"Kalimantan Tengah","xml"=>"/DigitalForecast-KalimantanTengah.xml",
 							"data_city"=>array(
+										array("area_id"=>"501342","city"=>"Palangkaraya"),
 										array("area_id"=>"501335","city"=>"Barito Selatan"),
 										array("area_id"=>"501336","city"=>"Katingan"),
 										array("area_id"=>"501337","city"=>"Kapuas"),
@@ -933,7 +934,6 @@ class BMKG{
 										array("area_id"=>"501339","city"=>"Seruyan"),
 										array("area_id"=>"501340","city"=>"Barito Utara"),
 										array("area_id"=>"501341","city"=>"Lamandau"),
-										array("area_id"=>"501342","city"=>"Palangkaraya"),
 										array("area_id"=>"501343","city"=>"Waringin Barat"),
 										array("area_id"=>"501344","city"=>"Pulang Pisau"),
 										array("area_id"=>"501345","city"=>"Murung Raya"),
@@ -944,10 +944,10 @@ class BMKG{
 						   ),								
 				"16"=>array("province"=>"Kalimantan Timur","xml"=>"/DigitalForecast-KalimantanTimur.xml",
 							"data_city"=>array(
+										array("area_id"=>"501354","city"=>"Samarinda"),
 										array("area_id"=>"501349","city"=>"Balikpapan"),
 										array("area_id"=>"501350","city"=>"Bontang"),
 										array("area_id"=>"501353","city"=>"Penajam Paser Utara"),
-										array("area_id"=>"501354","city"=>"Samarinda"),
 										array("area_id"=>"501355","city"=>"Kutai Barat"),
 										array("area_id"=>"501356","city"=>"Kutai Timur"),
 										array("area_id"=>"501357","city"=>"Paser"),
@@ -957,21 +957,21 @@ class BMKG{
 						   ),								
 				"17"=>array("province"=>"Kalimantan Utara","xml"=>"/DigitalForecast-KalimantanUtara.xml",
 							"data_city"=>array(
+										array("area_id"=>"501360","city"=>"Tarakan"),
 										array("area_id"=>"501351","city"=>"Malinau"),
 										array("area_id"=>"501352","city"=>"Nunukan"),
 										array("area_id"=>"501600","city"=>"Tana Tidung"),
 										array("area_id"=>"501359","city"=>"Bulungan"),
-										array("area_id"=>"501360","city"=>"Tarakan"),
 									)
 						   ),								
 				"18"=>array("province"=>"Kepulauan Riau","xml"=>"/DigitalForecast-KepulauanRiau.xml",
 							"data_city"=>array(
+										array("area_id"=>"501371","city"=>"Tanjung Pinang"),
 										array("area_id"=>"501601","city"=>"Batam"),
 										array("area_id"=>"501602","city"=>"Bintan"),
 										array("area_id"=>"501369","city"=>"Lingga"),
 										array("area_id"=>"501370","city"=>"Natuna"),
 										array("area_id"=>"501603","city"=>"Karimun"),
-										array("area_id"=>"501371","city"=>"Tanjung Pinang"),
 										array("area_id"=>"501372","city"=>"Anambas"),
 									)
 						   ),								
@@ -1010,6 +1010,7 @@ class BMKG{
 						   ),								
 				"21"=>array("province"=>"Maluku Utara","xml"=>"/DigitalForecast-MalukuUtara.xml",
 							"data_city"=>array(
+										array("area_id"=>"501394","city"=>"Ternate"),
 										array("area_id"=>"501390","city"=>"Halmahera Barat"),
 										array("area_id"=>"501391","city"=>"Halmahera Selatan"),
 										array("area_id"=>"501392","city"=>"Halmahera Timur"),
@@ -1017,7 +1018,6 @@ class BMKG{
 										array("area_id"=>"501393","city"=>"Kepulauan Sula"),
 										array("area_id"=>"5002253","city"=>"Tidore Kepulauan"),
 										array("area_id"=>"5002254","city"=>"Pulau Taliabu"),
-										array("area_id"=>"501394","city"=>"Ternate"),
 										array("area_id"=>"501604","city"=>"Tidore Kepulauan"),
 										array("area_id"=>"501395","city"=>"Halmahera Utara"),
 										array("area_id"=>"501396","city"=>"Halmahera Tengah"),
@@ -1025,10 +1025,10 @@ class BMKG{
 						   ),								
 				"22"=>array("province"=>"Nusa Tenggara Barat","xml"=>"/DigitalForecast-NusaTenggaraBarat.xml",
 							"data_city"=>array(
+										array("area_id"=>"501421","city"=>"Mataram"),
 										array("area_id"=>"501419","city"=>"Dompu"),
 										array("area_id"=>"501420","city"=>"Lombok Barat"),
 										array("area_id"=>"501418","city"=>"Bima"),
-										array("area_id"=>"501421","city"=>"Mataram"),
 										array("area_id"=>"501422","city"=>"Lombok Tengah"),
 										array("area_id"=>"5002222","city"=>"Sape"),
 										array("area_id"=>"501423","city"=>"Lombok Timur"),
@@ -1036,6 +1036,7 @@ class BMKG{
 						   ),								
 				"23"=>array("province"=>"Nusa Tenggara Timur","xml"=>"/DigitalForecast-NusaTenggaraTimur.xml",
 							"data_city"=>array(
+										array("area_id"=>"501434","city"=>"Kupang"),
 										array("area_id"=>"501427","city"=>"Belu"),
 										array("area_id"=>"501428","city"=>"Rote Ndao"),
 										array("area_id"=>"501429","city"=>"Ngada"),
@@ -1044,7 +1045,6 @@ class BMKG{
 										array("area_id"=>"501430","city"=>"Ende"),
 										array("area_id"=>"501431","city"=>"Alor"),
 										array("area_id"=>"501432","city"=>"Timor Tengah Utara"),
-										array("area_id"=>"501434","city"=>"Kupang"),
 										array("area_id"=>"501435","city"=>"Manggarai Barat"),
 										array("area_id"=>"501436","city"=>"Flores Timur"),
 										array("area_id"=>"501437","city"=>"Lembata"),
@@ -1062,13 +1062,13 @@ class BMKG{
 						   ),								
 				"24"=>array("province"=>"Papua","xml"=>"/DigitalForecast-Papua.xml",
 							"data_city"=>array(
+										array("area_id"=>"501447","city"=>"Jayapura"),
 										array("area_id"=>"501443","city"=>"Asmat"),
 										array("area_id"=>"501444","city"=>"Biak Numfor"),
 										array("area_id"=>"501445","city"=>"Waropen"),
 										array("area_id"=>"501611","city"=>"Mamberamo Raya"),
 										array("area_id"=>"501446","city"=>"Paniai"),
 										array("area_id"=>"5002259","city"=>"Genyem"),
-										array("area_id"=>"501447","city"=>"Jayapura"),
 										array("area_id"=>"501448","city"=>"Tolikara"),
 										array("area_id"=>"501449","city"=>"Mappi"),
 										array("area_id"=>"501450","city"=>"Merauke"),
@@ -1088,12 +1088,12 @@ class BMKG{
 						   ),								
 				"25"=>array("province"=>"Papua Barat","xml"=>"/DigitalForecast-PapuaBarat.xml",
 							"data_city"=>array(
+										array("area_id"=>"501467","city"=>"Manokwari"),
 										array("area_id"=>"501463","city"=>"Sorong"),
 										array("area_id"=>"501464","city"=>"Teluk Bintuni"),
 										array("area_id"=>"501465","city"=>"Fakfak"),
 										array("area_id"=>"501466","city"=>"Kaimana"),
 										array("area_id"=>"1200099","city"=>"Maybrat"),
-										array("area_id"=>"501467","city"=>"Manokwari"),
 										array("area_id"=>"1200101","city"=>"Manokwari Selatan"),
 										array("area_id"=>"501468","city"=>"Sorong"),
 										array("area_id"=>"501469","city"=>"Sorong Selatan"),
@@ -1103,13 +1103,13 @@ class BMKG{
 						   ),								
 				"26"=>array("province"=>"Riau","xml"=>"/DigitalForecast-Riau.xml",
 							"data_city"=>array(
+										array("area_id"=>"501478","city"=>"Pekanbaru"),
 										array("area_id"=>"501472","city"=>"Rokan Hilir"),
 										array("area_id"=>"501473","city"=>"Kampar"),
 										array("area_id"=>"501474","city"=>"Bengkalis"),
 										array("area_id"=>"501475","city"=>"Dumai"),
 										array("area_id"=>"501476","city"=>"Pelalawan"),
 										array("area_id"=>"501477","city"=>"Rokan Hulu"),
-										array("area_id"=>"501478","city"=>"Pekanbaru"),
 										array("area_id"=>"501479","city"=>"Indragiri Hulu"),
 										array("area_id"=>"5002217","city"=>"Kepulauan Meranti"),
 										array("area_id"=>"501480","city"=>"Siak"),
@@ -1119,16 +1119,17 @@ class BMKG{
 						   ),								
 				"27"=>array("province"=>"Sulawesi Barat","xml"=>"/DigitalForecast-SulawesiBarat.xml",
 							"data_city"=>array(
+										array("area_id"=>"501485","city"=>"Mamuju"),
 										array("area_id"=>"501483","city"=>"Majene"),
 										array("area_id"=>"501484","city"=>"Mamasa"),
-										array("area_id"=>"501485","city"=>"Mamuju"),
 										array("area_id"=>"1200113","city"=>"Mamuju Tengah"),
 										array("area_id"=>"501486","city"=>"Mamuju Utara"),
 										array("area_id"=>"501487","city"=>"Polewali Mandar"),
 									)
 						   ),								
 				"28"=>array("province"=>"Sulawesi Selatan","xml"=>"/DigitalForecast-SulawesiSelatan.xml",
-							"data_city"=>array(
+							"data_city"=>array(	
+										array("area_id"=>"501495","city"=>"Makassar"),
 										array("area_id"=>"501488","city"=>"Bantaeng"),
 										array("area_id"=>"501489","city"=>"Barru"),
 										array("area_id"=>"501490","city"=>"Kepulauan Selayar"),
@@ -1136,7 +1137,6 @@ class BMKG{
 										array("area_id"=>"501492","city"=>"Enrekang"),
 										array("area_id"=>"501493","city"=>"Jeneponto"),
 										array("area_id"=>"501494","city"=>"Tana Toraja"),
-										array("area_id"=>"501495","city"=>"Makassar"),
 										array("area_id"=>"501496","city"=>"Luwu Timur"),
 										array("area_id"=>"501497","city"=>"Maros"),
 										array("area_id"=>"501498","city"=>"Luwu Utara"),
@@ -1156,12 +1156,12 @@ class BMKG{
 						   ),								
 				"29"=>array("province"=>"Sulawesi Tengah","xml"=>"/DigitalForecast-SulawesiTengah.xml",
 							"data_city"=>array(
+										array("area_id"=>"1200106","city"=>"Palu"),
 										array("area_id"=>"501520","city"=>"Tojo Una-Una"),
 										array("area_id"=>"501521","city"=>"Morowali"),
 										array("area_id"=>"501522","city"=>"Buol"),
 										array("area_id"=>"501523","city"=>"Donggala"),
 										array("area_id"=>"501524","city"=>"Banggai"),
-										array("area_id"=>"1200106","city"=>"Palu"),
 										array("area_id"=>"501526","city"=>"Parigi Moutong"),
 										array("area_id"=>"501527","city"=>"Poso"),
 										array("area_id"=>"501528","city"=>"Banggai Kepulauan"),
@@ -1171,6 +1171,7 @@ class BMKG{
 						   ),								
 				"30"=>array("province"=>"Sulawesi Tenggara","xml"=>"/DigitalForecast-SulawesiTenggara.xml",
 							"data_city"=>array(
+										array("area_id"=>"501513","city"=>"Kendari"),
 										array("area_id"=>"501512","city"=>"Bau Bau"),
 										array("area_id"=>"501518","city"=>"Bombana"),
 										array("area_id"=>"501612","city"=>"Buton Utara"),
@@ -1179,7 +1180,6 @@ class BMKG{
 										array("area_id"=>"501515","city"=>"Kolaka Utara"),
 										array("area_id"=>"501613","city"=>"Konawe"),
 										array("area_id"=>"501511","city"=>"Konawe Selatan"),
-										array("area_id"=>"501513","city"=>"Kendari"),
 										array("area_id"=>"501517","city"=>"Muna"),
 										array("area_id"=>"501614","city"=>"Konawe Utara"),
 										array("area_id"=>"501519","city"=>"Wakatobi"),
@@ -1187,13 +1187,13 @@ class BMKG{
 						   ),								
 				"31"=>array("province"=>"Sulawesi Utara","xml"=>"/DigitalForecast-SulawesiUtara.xml",
 							"data_city"=>array(
+										array("area_id"=>"501534","city"=>"Manado"),
 										array("area_id"=>"501530","city"=>"Minahasa Utara"),
 										array("area_id"=>"501531","city"=>"Minahasa Selatan"),
 										array("area_id"=>"501532","city"=>"Bitung"),
 										array("area_id"=>"1200110","city"=>"Bolaang Mongondow"),
 										array("area_id"=>"501615","city"=>"Kotamobagu"),
 										array("area_id"=>"501533","city"=>"Bolaang Mongondow"),
-										array("area_id"=>"501534","city"=>"Manado"),
 										array("area_id"=>"501535","city"=>"Talaud"),
 										array("area_id"=>"501616","city"=>"Sitaro"),
 										array("area_id"=>"501617","city"=>"Minahasa Tenggara"),
@@ -1204,13 +1204,13 @@ class BMKG{
 						   ),								
 				"32"=>array("province"=>"Sumatera Barat","xml"=>"/DigitalForecast-SumateraBarat.xml",
 							"data_city"=>array(
+										array("area_id"=>"501545","city"=>"Padang"),
 										array("area_id"=>"501539","city"=>"Solok"),
 										array("area_id"=>"501540","city"=>"Tanah Datar"),
 										array("area_id"=>"501541","city"=>"Bukittinggi"),
 										array("area_id"=>"501542","city"=>"Agam"),
 										array("area_id"=>"501543","city"=>"Pasaman"),
 										array("area_id"=>"501544","city"=>"Sijunjung"),
-										array("area_id"=>"501545","city"=>"Padang"),
 										array("area_id"=>"501546","city"=>"Solok Selatan"),
 										array("area_id"=>"501547","city"=>"Padangpanjang"),
 										array("area_id"=>"501548","city"=>"Pesisir Selatan"),
@@ -1227,6 +1227,7 @@ class BMKG{
 						   ),								
 				"33"=>array("province"=>"Sumatera Selatan","xml"=>"/DigitalForecast-SumateraSelatan.xml",
 							"data_city"=>array(
+										array("area_id"=>"501568","city"=>"Palembang"),
 										array("area_id"=>"501563","city"=>"Banjar"),
 										array("area_id"=>"501558","city"=>"Ogan Komering Ulu"),
 										array("area_id"=>"501559","city"=>"Ogan Ilir"),
@@ -1239,7 +1240,6 @@ class BMKG{
 										array("area_id"=>"5002251","city"=>"Musi Rawas Utara"),
 										array("area_id"=>"501566","city"=>"Musi Rawas"),
 										array("area_id"=>"501567","city"=>"Pagar Alam"),
-										array("area_id"=>"501568","city"=>"Palembang"),
 										array("area_id"=>"501569","city"=>"Banyuasini"),
 										array("area_id"=>"501570","city"=>"Prabumulih"),
 										array("area_id"=>"501571","city"=>"Musi Banyuasin"),
@@ -1249,6 +1249,7 @@ class BMKG{
 						   ),									
 				"34"=>array("province"=>"Sumatera Utara","xml"=>"/DigitalForecast-SumateraUtara.xml",
 							"data_city"=>array(
+										array("area_id"=>"501580","city"=>"Medan"),
 										array("area_id"=>"5002212","city"=>"Labuhanbatu Utara"),
 										array("area_id"=>"501573","city"=>"Toba Samosir"),
 										array("area_id"=>"501574","city"=>"Binjai"),
@@ -1261,7 +1262,6 @@ class BMKG{
 										array("area_id"=>"5002216","city"=>"Nias Barat"),
 										array("area_id"=>"5002215","city"=>"Nias Utara"),
 										array("area_id"=>"501579","city"=>"Deli Serdang"),
-										array("area_id"=>"501580","city"=>"Medan"),
 										array("area_id"=>"501581","city"=>"Padang Sidempuan"),
 										array("area_id"=>"501582","city"=>"Tapanuli Tengah"),
 										array("area_id"=>"501583","city"=>"Samosir"),
@@ -1308,7 +1308,7 @@ class BMKG{
 		return $ret;
 	}	
 	
-	public function weather($province_id = "", $area_id = ""){
+	public function weather($province_id = "", $area_id = "", $ip_address = ""){
 		$arrProvince 	= $this->province_list($province_id);
 		$dateNow	 	= intval(date('Ymd'));
 		
@@ -1322,6 +1322,10 @@ class BMKG{
 		$result = array();
 		$data = $this->remote_data($remote_url);
 		$arrData = array();
+		
+		if(!empty($ip_address)){
+			$result['ip_address']     = $ip_address;
+		}
 		
 		if(!$data){
 			$result['status']     = "error";
@@ -1515,7 +1519,7 @@ class BMKG{
 		return $result;
     }
 	
-	public function weather_html($province_id = "", $area_id = ""){
+	public function weather_html($province_id = "", $area_id = "", $ip_address = ""){
 		$remote_url = "https://www.bmkg.go.id/cuaca/prakiraan-cuaca.bmkg";
 		$id = "";
 		
@@ -1719,6 +1723,10 @@ class BMKG{
 				/* echo "<pre>";
 				print_r($arrData);
 				echo "</pre>"; */
+				
+				if(!empty($ip_address)){
+					$result['ip_address']     = $ip_address;
+				}
 				
 				if($isError){
 					$result['status']     = "error";
